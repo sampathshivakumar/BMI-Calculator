@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><title>Past BMI Readings</title></head>
+<body>
+<h1>Past BMI Readings</h1>
+<table border="1">
+<tr><th>Name</th><th>Gender</th><th>Age</th><th>Height</th><th>Weight</th><th>BMI</th><th>Status</th><th>Diff(Kg)</th></tr>
+{% for r in rows %}
+<tr>
+{% for c in r %}
+<td>{{ c }}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+</table>
+<a href="/">Go Back</a>
+</body>
+</html>
