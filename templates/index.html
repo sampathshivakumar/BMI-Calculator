@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><title>BMI Calculator</title></head>
+<body>
+  <h1>BMI Calculator</h1>
+  <form method="post">
+    Name: <input name="name" required><br>
+    Gender: <select name="gender"><option>Male</option><option>Female</option></select><br>
+    Age: <input name="age" required><br>
+    Height (cm): <input name="height" required><br>
+    Weight (kg): <input name="weight" required><br>
+    <button type="submit">Calculate</button>
+  </form>
+  {% if message %}
+  <h3>{{ message }}</h3>
+  {% endif %}
+  <a href="/past">View Past Readings</a>
+</body>
+</html>
